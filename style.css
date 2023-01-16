@@ -1,0 +1,41 @@
+  
+        body{
+            background-color: rgb(50, 51, 53);
+            padding: 10px;
+            
+        }
+        form{
+            background-color: white;
+            text-align: center;
+            width: 450px;
+            height: 600px;
+            padding: 50px;
+            border-radius: 20px;
+            margin: auto;
+        }
+        form input{
+            width: 100%;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        p{
+            margin-top: 40px;
+        }
+        p label{
+            display: flex;
+        }
+        .password-check::after{
+            content: "";
+        }
+        .password-check{
+            display: flex;
+            color: gray;
+            font-weight: bold;
+            padding: 2px;
+        }
+        #submit{
+            background-color: rgb(14, 14, 174);
+            color: white;
+            padding: 5px;
+        }
+       

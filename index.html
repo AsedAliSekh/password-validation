@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <form method="post">
+        <p>
+            <h1 style="font-size: 30px; text-align: center;">
+                Registrasion Form
+            </h1>
+        </p>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </p>
+        <p>
+            <label for="password">Password*</label>
+            <input type="password" id="password" onkeyup="passCheck(this.value)">
+        </p>
+        <p>
+            <label for="confirm_password">Confirm Password*</label>
+            <input type="password" id="conform_password" onblur="return conform()">
+        </p>
+
+
+
+        <p>
+            <label class="password-check"> 8 Characters</label>
+            <label class="password-check"> 1 Lower Case Character</label>
+            <label class="password-check"> 1 Upper Case Character</label>
+            <label class="password-check"> 1 Numerical Character</label>
+            <label class="password-check"> 1 Special Character</label>
+        </p>
+
+        <p>
+            
+            <input id="submit" type="submit" value="SUBMIT">
+        </p>
+
+    </form>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
